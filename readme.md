@@ -1,7 +1,3 @@
-Certainly! Here's the README file updated with the MIT License:
-
----
-
 # Robotic Arm Project
 
 ## Overview
@@ -18,7 +14,6 @@ This project focuses on designing and building a versatile 6-DOF articulated rob
 - **Control System:** Raspberry Pi with RoboDK & Image Processing
 - **Control Method:** Vision-Guided Control
 - **Materials:** 3D Printed (Except Bearings, Motors, Screws)
-- **Cost:** Approximately 30,000 INR
 
 ## Components and Usage
 
