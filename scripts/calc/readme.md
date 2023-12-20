@@ -4,21 +4,16 @@ This program calculates various parameters for different stepper motors based on
 
 ## Formulas
 
-1. **Average Power:**
+1. **Power:**
+   - $P_{\text{avg}} = \frac{2}{3} \times I_{\text{rated}} V_{\text{rated}}$
+   - $V_{\text{max}} = \sqrt{L} \times 32$
+   - $P_{\text{max}} = 1.2 \times I_{\text{rated}} V_{\text{max}}$
 
-   - $ P*{\text{avg}} = \frac{2}{3} \times I*{\text{rated}} V\_{\text{rated}} $
+2. **Speed:**
+   - $\text{Speed (rpm)} = \frac{V_{\text{rated}} \times 60}{2 \times L \times I_{\text{rated}} \times \text{spr}}$
 
-2. **Maximum Power:**
-
-   - $ V\_{\text{max}} = \sqrt{L} \times 32 $
-   - $ P*{\text{max}} = 1.2 \times I*{\text{rated}} V\_{\text{max}} $
-
-3. **Speed:**
-
-   - $ \text{Speed (rpm)} = \frac{V*{\text{rated}} \times 60}{2 \times L \times I*{\text{rated}} \times \text{spr}} $
-
-4. **Minimum Delay:**
-   - $ \text{Delay (s)} = \frac{2 \times L \times I*{\text{rated}}}{V*{\text{rated}}} $
+3. **Minimum Delay:**
+   - $\text{Delay (s)} = \frac{2 \times L \times I_{\text{rated}}}{V_{\text{rated}}}$
 
 ## Circuit Diagram
 
@@ -27,7 +22,7 @@ This program calculates various parameters for different stepper motors based on
 ## Motor Specifications
 
 | # | Motor Model   | Qty. | 🛒                                                                                                    | 📄                                                                                  | 📏                                                                                                                |
-|---|---------------|------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+|---|---------------|------|------------------------------------------------------------------------------------------------------  |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | 1 | NEMA23_31_D   | 1    | [🛒](https://robu.in/product/neema-23-jk57hs112-4204-3-1n-m-d-type/)                                  | [📄](https://www.steppermotorcanada.ca/57hs112-4204-03.pdf)                         | -                                                                                                                 |
 | 2 | NEMA23_18.9_D | 2    | [🛒](https://www.robu.in/product/57hs76-2804-05-nema23-18-9-kg-cm-hybrid-stepper-motor-d-type-shaft/) | [📄](https://ecksteinimg.de/Datasheet/Schrittmotor/JK57HS76-2804/JK57HS76-2804.pdf) | [📏](https://robu.in/wp-content/uploads/2015/12/NEMA-23-18.9-kg-cm-Hybrid-Stepper-Motor-ROBU.IN_.gif)             |
 | 3 | NEMA17_7.2_R  | 2    | [🛒](https://robu.in/product/neema-17-jk42hs60-1704-0-72n-m-round-type/)                              | [📄](https://robu.in/wp-content/uploads/2023/07/1551713.pdf)                        | -                                                                                                                 |
