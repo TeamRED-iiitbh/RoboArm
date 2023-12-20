@@ -3,17 +3,11 @@
 This program calculates various parameters for different stepper motors based on their specifications. The program uses formulas derived from stepper motor theory to compute average power, maximum power, speed, and minimum delay. The motor specifications and results are then printed in a formatted string for easy readability.
 
 ## Formulas
-
-1. **Power:**
-   - $P_{\text{avg}} = \frac{2}{3} \times I_{\text{rated}} V_{\text{rated}}$
-   - $V_{\text{max}} = \sqrt{L} \times 32$
-   - $P_{\text{max}} = 1.2 \times I_{\text{rated}} V_{\text{max}}$
-
-2. **Speed:**
-   - $\text{Speed (rpm)} = \frac{V_{\text{rated}} \times 60}{2 \times L \times I_{\text{rated}} \times \text{spr}}$
-
-3. **Minimum Delay:**
-   - $\text{Delay (s)} = \frac{2 \times L \times I_{\text{rated}}}{V_{\text{rated}}}$
+   $$V_{\text{max}} = \sqrt{L} \times 32$$
+   $$P_{\text{avg}} = \frac{2}{3} \times I_{\text{rated}} V_{\text{rated}}$$
+   $$P_{\text{max}} = 1.2 \times I_{\text{rated}} V_{\text{max}}$$
+   $$\text{Speed (rpm)} = \frac{V_{\text{rated}} \times 60}{2 \times L \times I_{\text{rated}} \times \text{spr}}$$
+   $$\text{Min. Delay (s)} = \frac{2 \times L \times I_{\text{rated}}}{V_{\text{rated}}}$$
 
 ## Circuit Diagram
 
