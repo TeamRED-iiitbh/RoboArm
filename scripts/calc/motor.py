@@ -13,8 +13,8 @@ class StepperMotor:
     - stepAngle: Step angle in degrees.
     - ratedVoltage: Tested voltage from T-Curve in V.
     - ratedCurrent: Phase current in A.
-    - resistance: Phase resistance in Ω with ±10%.
-    - inductance: Inductance in (mH) at 1 kHz with ±20%.
+    - resistance: Phase resistance in Ω with ±10% at 20°C.
+    - inductance: Inductance in (mH) at 1 kHz 1V RMS with ±20%.
     - holdingTorque: The holding torque of the motor in Nm.
 
     Methods:
@@ -66,9 +66,10 @@ class StepperMotor:
         return result
 
 
-NEMA23_30 = StepperMotor("NEMA23_30", "JK57HS112-4204", 1.8, 36, 4.2, 0.9, 3.8, 3.1)
-NEMA23_18 = StepperMotor("NEMA23_18", "57HS76-2804-05", 1.8, 30, 2.8, 1.13, 3.6, 1.89)
-NEMA17_07 = StepperMotor("NEMA17_07", "42HS60-1684", 1.8, 24, 1.68, 1.7, 2.8, 0.72)
-NEMA17_05 = StepperMotor("NEMA17_05", "KS42BYGHW811", 1.8, 24, 2.5, 1.25, 1.8, 0.48)
+NEMA23_310 = StepperMotor("NEMA23_310", "JK57HS112-4204", 1.8, 36, 4.2, 0.9, 3.8, 3.1)
+NEMA23_189 = StepperMotor("NEMA23_189", "57HS76-2804-05", 1.8, 30, 2.8, 1.13, 3.6, 1.89)
+NEMA17_72 = StepperMotor("NEMA17_72", "42HS60-1684", 1.8, 24, 1.68, 1.7, 2.8, 0.72)
+NEMA17_65 = StepperMotor("NEMA17_65", "JK42HS60-1206F", 1.8, 24, 1.2, 6, 7, 0.65)
+NEMA17_48 = StepperMotor("NEMA17_48", "KS42BYGHW811", 1.8, 24, 2.5, 1.25, 1.8, 0.48)
 
-print(NEMA23_30, NEMA23_18, NEMA17_07, NEMA17_05)
+print(NEMA23_310, NEMA23_189, NEMA17_65, NEMA17_72, NEMA17_48)
