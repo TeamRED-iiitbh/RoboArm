@@ -5,7 +5,7 @@ class StepperMotor:
     """
     Stepper Motor Calculator
 
-    Author: Shrijal
+    Author: Vivek & Shrijal
 
     Attributes:
     - name: Unique identifier for the motor object.
